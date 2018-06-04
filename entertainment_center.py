@@ -1,7 +1,7 @@
 # This file create a list  movies objects
 # Movies attribute is obtained using
 # https://www.themoviedb.org/documentation/api
-# then create HTML file that display them
+# then create HTML file to display movie list
 # Done by : Nadia Ahmed
 
 import media
@@ -30,12 +30,12 @@ def Format_Query(movie_name):
 
 
 def Create_Movie(movie_name):
-    """ This method take movie name
-        and search for it's id
-        then using id movie it will
-        get title, poster path and trailer
-        then return mvie object
-    """
+    """ This method take movie name,
+        search for it's id in API,
+        using id it will get from API
+        title, poster path and trailer.
+        Return movie object
+        """
 
     # get the movie query format
     movie_query = Format_Query(movie_name)
